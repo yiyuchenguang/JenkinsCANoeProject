@@ -1,4 +1,4 @@
-/*@!Encoding:1252*/
+/*@!Encoding:936*/
 includes
 {  
 }
@@ -8,18 +8,53 @@ variables
   word subTestStepIndex=0;
   char TestStepText[200]; 
   char tempText[200]; 
+  
+  const byte start_log = 1;
+  const byte stop_log  = 0;
+  
+  char logging[20] = "Logging";
+  char testcase_title[50];
+  char LogFileName[200];
+
 }
+
+void StartStopLogging(char logName[],char title[],byte flag )
+{
+  if(flag == 1)
+  {
+      snprintf(LogFileName, elcount(LogFileName), "..\\TestReport\\%s_{UserName}_{LocalTime}.blf",testcase_title); 
+      setLogFileName(logName, LogFileName);
+      startLogging(logName);
+  }
+  else
+  {
+    stopLogging( logName);
+  }
+  
+}
+
+
+
 testcase Set_EngineState()
 {
+  
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
   TestStepIndex = 1;
   subTestStepIndex= 1;
   snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
   TestStep(TestStepText, "Set Engine Speed.");  
   setSignal(EngineSpeed,1000);
   testStepPass(TestStepText, "Set Engine Speed to 1000"); 
+  
+  StartStopLogging(logging,testcase_title,stop_log);
 }
 testcase Set_LightState()
 { 
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
   TestStepIndex = 1;
   subTestStepIndex= 1;
   snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
@@ -32,35 +67,10 @@ testcase Set_LightState()
   snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
   TestStep(TestStepText, "Set Head Light..");
   setSignal(HeadLight,1);
-  testStepPass(TestStepText, "Open Head Light");   
+  testStepPass(TestStepText, "Open Head Light");
+  
+  StartStopLogging(logging,testcase_title,stop_log);
 }
 
-testcase casedemo()
-{ 
-//  long timeout;
-//  char str[200];
-//  timeout = random(1000)+ 1000;
-//  testWaitForTimeout(timeout);
-//  snprintf(str,elCount(str),"waited %d ms",timeout);
-//
-//  if(timeout%2 == 0)
-//  {
-//    testStepPass("1.1", str);   
-//  }
-//  else
-//  {
-//    testStepFail("1.1", str); 
-//  }
-    char title[100];
 
-  testCaseComment("Test Case:");
-  testGetCurrentTestCaseTitle(title, elcount(title));
-  testCasecomment(title);
-}
-//
-//void MainTest ()
-//{
-//    read_EngineState();
-//    read_LightState();
-//}
 
