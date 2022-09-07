@@ -22,7 +22,8 @@ void StartStopLogging(char logName[],char title[],byte flag )
 {
   if(flag == 1)
   {
-      snprintf(LogFileName, elcount(LogFileName), "..\\TestReport\\%s_{UserName}_{LocalTime}.blf",testcase_title); 
+      //snprintf(LogFileName, elcount(LogFileName), "..\\TestReport\\%s_{UserName}_{LocalTime}.blf",testcase_title); 
+      snprintf(LogFileName, elcount(LogFileName), "..\\TestReport\\%s.blf",testcase_title); 
       setLogFileName(logName, LogFileName);
       startLogging(logName);
   }
@@ -47,6 +48,7 @@ testcase Set_EngineState()
   TestStep(TestStepText, "Set Engine Speed.");  
   setSignal(EngineSpeed,1000);
   testStepPass(TestStepText, "Set Engine Speed to 1000"); 
+  testWaitForTimeout(random(1000));
   
   StartStopLogging(logging,testcase_title,stop_log);
 }
@@ -61,6 +63,8 @@ testcase Set_LightState()
   TestStep(TestStepText, "Set Flash Light..");
   setSignal(FlashLight,1);
   testStepPass(TestStepText, "Open Flash Light"); 
+  
+   testWaitForTimeout(random(1000));
   
   TestStepIndex = 2;
   subTestStepIndex= 1;

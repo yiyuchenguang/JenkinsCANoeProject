@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<parseerrors xmlns="http://www.vector-informatik.de/TestAutomationEditor/XMLTestModuleErrors/1.0">
-  <error>
-    <message>XML parser error: whitespace expected</message>
-    <location line="11">/tae:testmodule/*[name()='testgroup' and position()=3]</location>
-  </error>
-</parseerrors>
