@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<testmodule title="bmw" version="">
+	<description>CI/CD Test Demo</description>
+	<variants>
+		<variant name="Auto_Tests">Auto_Tests</variant>
+		<variant name="Manual_Tests">Manual_Tests</variant>
+		<variant name="Semi_Tests">Semi_Tests</variant>
+	</variants>
+		<testgroup title="TP">
+					<!-- title 最好和ident一样,如果不一样,title也要包含ident-->
+				<capltestcase name="GenericTPTest" title="TC_TP_001" ident="TC_TP_001" variants="Auto_Tests"></capltestcase>
+				<capltestcase name="GenericTPTest" title="TC_TP_002" ident="TC_TP_002" variants="Auto_Tests"></capltestcase>
+				<capltestcase name="GenericTPTest" title="TC_TP_003" ident="TC_TP_003" variants="Auto_Tests"></capltestcase>
+		</testgroup>			
+</testmodule>

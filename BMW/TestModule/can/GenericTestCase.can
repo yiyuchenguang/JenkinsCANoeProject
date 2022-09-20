@@ -1,0 +1,115 @@
+/*@!Encoding:936*/
+includes
+{  
+}
+variables
+{
+  word TestStepIndex=0;
+  word subTestStepIndex=0;
+  char TestStepText[200]; 
+  char tempText[200]; 
+  
+  const byte start_log = 1;
+  const byte stop_log  = 0;
+  
+  char logging[20] = "Logging";
+  char testcase_title[50];
+  char LogFileName[200];
+
+}
+
+void StartStopLogging(char logName[],char title[],byte flag )
+{
+  if(flag == 1)
+  {
+      //snprintf(LogFileName, elcount(LogFileName), "..\\TestReport\\%s_{UserName}_{LocalTime}.blf",testcase_title); 
+      snprintf(LogFileName, elcount(LogFileName), "..\\TestReport\\%s.blf",testcase_title); 
+      setLogFileName(logName, LogFileName);
+      startLogging(logName);
+  }
+  else
+  {
+    stopLogging( logName);
+  }
+  
+}
+
+
+
+testcase GenericUDSTest()
+{
+  
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
+  TestStepIndex = 1;
+  subTestStepIndex= 1;
+  snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
+  TestStep(TestStepText, "UDS Test");
+  // 省略具体测试
+  testWaitForTimeout(random(3000));
+  testStepPass(TestStepText, "UDS Test Pass");  
+  StartStopLogging(logging,testcase_title,stop_log);
+}
+
+testcase GenericDTCTest()
+{ 
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
+  TestStepIndex = 1;
+  subTestStepIndex= 1;
+  snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
+  TestStep(TestStepText, "DTC Test");
+  // 省略具体测试
+  testWaitForTimeout(random(3000));
+  testStepPass(TestStepText, "DTC Test Pass");  
+  StartStopLogging(logging,testcase_title,stop_log);
+}
+
+testcase GenericFlashTest()
+{ 
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
+  TestStepIndex = 1;
+  subTestStepIndex= 1;
+  snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
+  TestStep(TestStepText, "Flash Test");
+  // 省略具体测试
+  testWaitForTimeout(random(3000));
+  testStepPass(TestStepText, "Flash Test Pass");  
+  StartStopLogging(logging,testcase_title,stop_log);
+}
+
+
+testcase GenericNMTest()
+{ 
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
+  TestStepIndex = 1;
+  subTestStepIndex= 1;
+  snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
+  TestStep(TestStepText, "NM Test");
+  // 省略具体测试
+  testWaitForTimeout(random(3000));
+  testStepPass(TestStepText, "NM Test Pass");  
+  StartStopLogging(logging,testcase_title,stop_log);
+}
+
+testcase GenericTPTest()
+{ 
+  testGetCurrentTestCaseTitle(testcase_title,elcount(testcase_title));
+  StartStopLogging(logging,testcase_title,start_log);
+  
+  TestStepIndex = 1;
+  subTestStepIndex= 1;
+  snprintf(TestStepText, elcount(TestStepText), "%d.%d", TestStepIndex,subTestStepIndex );
+  TestStep(TestStepText, "TP Test");
+  // 省略具体测试
+  testWaitForTimeout(random(3000));
+  testStepPass(TestStepText, "TP Test Pass");  
+  StartStopLogging(logging,testcase_title,stop_log);
+}
+

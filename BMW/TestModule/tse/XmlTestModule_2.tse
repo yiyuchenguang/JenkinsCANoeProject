@@ -1,4 +1,4 @@
-;CANoe Version |4|11|0|54388 XmlTestModule_2 
+;CANoe Version |4|11|0|54369 XmlTestModule_2 
 Version: 11.0.55 Build 55
 32 PRO
 5
@@ -12,14 +12,35 @@ VTSPersistentRoot 1 Begin_Of_Object
 1
 TS_PERSISTENT_ROOT_ID_STRING_0x792341fe
 1
+3
+VTSFolder 2 Begin_Of_Object
+1
+VTSItem 3 Begin_Of_Object
+1
+3 4171208206 0
+1
+END_OF_ITEM_DATA
+End_Of_Object VTSItem 3
+4
+Test Environment
 2
+4177400318
+4177420254
+<VFileName V7 QL> 1 "..\report.xml" 
+END_OF_FILE_NAME
+<VFileName V7 QL> 1 "" 
+END_OF_FILE_NAME
+2
+1
+END_OF_FOLDER_DATA
+End_Of_Object VTSFolder 2
 VTSProgrammedNode 2 Begin_Of_Object
 1
 VTSWrapper<class_VProgrammedNode> 3 Begin_Of_Object
 2
 VTSItem 4 Begin_Of_Object
 1
-3 4192911998 0
+3 4177400318 0
 1
 END_OF_ITEM_DATA
 End_Of_Object VTSItem 4
@@ -33,9 +54,9 @@ VProgrammedNode 6 Begin_Of_Object
 VConfigurationRoot 7 Begin_Of_Object
 1
 End_Of_Object VConfigurationRoot 7
-<VFileName V7 QL> 1 "..\xml\XML_Demo.xml" 
+<VFileName V7 QL> 1 "..\xml\dtc_test.xml" 
 1
-D:\Jenkins\workspace\TestEnvironment\JenkinsCANoeProject\BMW\TestModule\xml\XML_Demo.xml
+D:\Jenkins\workspace\TestEnvironment\JenkinsCANoeProject\BMW\TestModule\xml\dtc_test.xml
 
 
 5
@@ -53,7 +74,7 @@ VBoxRoot 9 Begin_Of_Object
 1
 3
 1 0 0 1 -1 -1 -1 -1 462 30 1151 490
-
+dtc_test
 1
 
 MDI_DOCK_INFO_END
@@ -87,8 +108,8 @@ END_OF_DESKTOP_DATA
 0 1 -1 -1 -1 -1 462 30 1151 490
 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
 END_OF_DOCK_INFO
-1
-1
+0
+0
 1
 0 1 -1 -1 -1 -1 480 257 1440 773
 0
@@ -138,7 +159,7 @@ END_OF_DESKTOP_DATA
 END_OF_DESKTOP_DATA_COLLECTION
 0
 END_OF_DESKTOP_MEMBER
-{655410AA-33C2-41E5-98BD-875E053B7478}
+{6DD66F27-3F9B-45DD-B8AF-DFFCC37C9B3F}
 0
 End_Of_Object VBoxRoot 9
 1 -1 0 0 0 0 0 0 0 0 0 0
@@ -158,7 +179,7 @@ EOF_MBSSDATA
 EOF_NLDATA
 0
 EOF_ASSEMBLYDATA
-<VFileName V7 QL> 1 "..\xml\XML_Demo.xml" 
+<VFileName V7 QL> 1 "..\xml\dtc_test.xml" 
 VIPBStackSetting 7 Begin_Of_Object
 5
 2
@@ -202,12 +223,12 @@ End_Of_ReportFilter_Items
 NULL
 NULL
 1
-<VFileName V7 QL> 1 "..\can\XML_Demo.can" 
+<VFileName V7 QL> 1 "..\can\GenericTestCase.can" 
 EOF_CAPLLIBS
-<VFileName V7 QL> 1 "..\xml\XML_Demo_report.xml" 
+<VFileName V7 QL> 1 "..\xml\dtc_test_report.xml" 
 1 0 1
 1
-<VFileName V7 BQL> 1 base=cfg "..\..\Configration" 
+<VFileName V7 BQL> 1 base=cfg "..\..\Configuration" 
 3
 VSimulinkModelViewerConfiguration 6 Begin_Of_Object
 2
@@ -229,7 +250,7 @@ VBoxRoot 8 Begin_Of_Object
 1
 3
 1 0 0 1 -1 -1 -1 -1 462 30 1151 490
-
+dtc_test
 1
 
 MDI_DOCK_INFO_END
@@ -263,8 +284,8 @@ END_OF_DESKTOP_DATA
 0 1 -1 -1 -1 -1 462 30 1151 490
 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
 END_OF_DOCK_INFO
-1
-1
+0
+0
 1
 0 1 -1 -1 -1 -1 480 257 1440 773
 0
@@ -314,14 +335,14 @@ END_OF_DESKTOP_DATA
 END_OF_DESKTOP_DATA_COLLECTION
 0
 END_OF_DESKTOP_MEMBER
-{655410AA-33C2-41E5-98BD-875E053B7478}
+{6DD66F27-3F9B-45DD-B8AF-DFFCC37C9B3F}
 0
 End_Of_Object VBoxRoot 8
 1 -1 0 0 0 0 0 0 0 0 0 0
 End_Of_Object VUniqueBox 7
 1
 End_Of_Object VConfigurationBox 6
-<VFileName V7 QL> 1 "..\can\XML_Demo.cbf" 
+<VFileName V7 QL> 1 "..\can\GenericTestCase.cbf" 
 NULL
 0
 0
@@ -346,7 +367,7 @@ End_Of_Object VTestModuleController 6
 End_Of_Object VTestModuleControllerXML 5
 End_Of_Testcase_Exec_Flags
 Variant:
-<VFileName V7 BQL> 1 base=cfg "..\..\Configration" 
+<VFileName V7 BQL> 1 base=cfg "..\..\Configuration" 
 End_Of_Testcase_Exec_Flags_W
 Variant:
 End_Of_Object VXmlTestNode 4
@@ -358,34 +379,363 @@ End_Of_Object VTSWrapper<class_VProgrammedNode> 3
 TS_BUS_INFO_COLLECTION_END
 TS_CAPL_BLOCK_END
 End_Of_Object VTSProgrammedNode 2
-VTSFolder 2 Begin_Of_Object
+VTSProgrammedNode 2 Begin_Of_Object
 1
-VTSItem 3 Begin_Of_Object
+VTSWrapper<class_VProgrammedNode> 3 Begin_Of_Object
+2
+VTSItem 4 Begin_Of_Object
 1
-3 4201265454 0
+3 4177420254 0
 1
 END_OF_ITEM_DATA
-End_Of_Object VTSItem 3
-4
-Test Environment
-1
-4192911998
-<VFileName V7 QL> 1 "..\report.xml" 
-END_OF_FILE_NAME
-<VFileName V7 QL> 1 "" 
-END_OF_FILE_NAME
-1
-1
-END_OF_FOLDER_DATA
-End_Of_Object VTSFolder 2
-1
-4201265454
+End_Of_Object VTSItem 4
 2
+VXmlTestNode 4 Begin_Of_Object
+4
+VTestNode 5 Begin_Of_Object
+8
+VProgrammedNode 6 Begin_Of_Object
+6
+VConfigurationRoot 7 Begin_Of_Object
 1
-4192911998
+End_Of_Object VConfigurationRoot 7
+<VFileName V7 QL> 1 "..\xml\uds_test.xml" 
+1
+D:\Jenkins\workspace\TestEnvironment\JenkinsCANoeProject\BMW\TestModule\xml\uds_test.xml
+
+
+5
+Test 6
+Test 6
+EOF_TITLE_INFO
+
+1
+1
+VConfigurationBox 7 Begin_Of_Object
+1
+VUniqueBox 8 Begin_Of_Object
+1
+VBoxRoot 9 Begin_Of_Object
+1
+3
+1 0 0 1 -1 -1 -1 -1 462 30 1151 490
+uds_test
+1
+
+MDI_DOCK_INFO_END
+5
+1
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+6
+0 1 -1 -1 -1 -1 162 246 592 628
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
 0
 1
-4201265454
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
 1
-4192911998
+1920 779
+END_OF_DESKTOP_DATA
+6
+0 1 -1 -1 -1 -1 462 30 1151 490
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+0
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+1
+1920 779
+END_OF_DESKTOP_DATA
+END_OF_DESKTOP_DATA_COLLECTION
+0
+0 1
+1
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+END_OF_DESKTOP_DATA_COLLECTION
+0
+END_OF_DESKTOP_MEMBER
+{6CF7C630-89FD-44F8-B993-8EDD3010ED7E}
+0
+End_Of_Object VBoxRoot 9
+1 -1 0 0 0 0 0 0 0 0 0 0
+End_Of_Object VUniqueBox 8
+1
+End_Of_Object VConfigurationBox 7
+1
+1
+0
+1
+0
+
+EOF_MBSSDATA
+1
+0 1
+0
+EOF_NLDATA
+0
+EOF_ASSEMBLYDATA
+<VFileName V7 QL> 1 "..\xml\uds_test.xml" 
+VIPBStackSetting 7 Begin_Of_Object
+5
+2
+0
+0
+1
+0
+1
+7
+0.0.0.0
+End_Of_Serialized_Data 7
+7
+::
+End_Of_Serialized_Data 7
+End_Of_Object VIPBStackSetting 7
+6
+NULL
+End_Of_Serialized_Data 6
+0
+<VFileName V7 QL> 0 "C:\Users\carl.wu\AppData\Local\Temp" 
+1
+0
+End_Of_Object VProgrammedNode 6
+0
+2
+IDS_REPORTFILTER_ITEM_DESCRIPTION=1
+IDS_REPORTFILTER_ITEM_COMMENTS=1
+IDS_REPORTFILTER_ITEM_VARIABLE=1
+IDS_REPORTFILTER_ITEM_RESUME_SIMPLETIMEOUT=1
+IDS_REPORTFILTER_ITEM_RESUME=1
+IDS_REPORTFILTER_ITEM_FIRSTVIOLATION=1
+IDS_REPORTFILTER_ITEM_STATISTICS=1
+IDS_REPORTFILTER_ITEM_HARDWARE=1
+IDS_REPORTFILTER_ITEM_CHECKEVENTS=0
+IDS_REPORTFITLER_ITEM_GENINFO=1
+IDS_REPORTFITLER_ITEM_SUTINFO=1
+IDS_REPORTFITLER_ITEM_ENGINFO=1
+IDS_REPORTFITLER_ITEM_ELMINFO=1
+End_Of_ReportFilter_Items
+0 
+NULL
+NULL
+1
+<VFileName V7 QL> 1 "..\can\GenericTestCase.can" 
+EOF_CAPLLIBS
+<VFileName V7 QL> 1 "..\xml\uds_test_report.xml" 
+1 0 1
+1
+<VFileName V7 BQL> 1 base=cfg "..\..\Configuration" 
+3
+VSimulinkModelViewerConfiguration 6 Begin_Of_Object
+2
+<VFileName V7 QL> 0 "C:\Users\carl.wu\AppData\Local\Temp" 
+<VFileName V7 QL> 0 "C:\Users\carl.wu\AppData\Local\Temp" 
+<VFileName V7 QL> 0 "C:\Users\carl.wu\AppData\Local\Temp" 
+150
+0
+End_Of_Object VSimulinkModelViewerConfiguration 6
+1
+0
+1
+1
+VConfigurationBox 6 Begin_Of_Object
+1
+VUniqueBox 7 Begin_Of_Object
+1
+VBoxRoot 8 Begin_Of_Object
+1
+3
+1 0 0 1 -1 -1 -1 -1 462 30 1151 490
+uds_test
+1
+
+MDI_DOCK_INFO_END
+5
+1
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+6
+0 1 -1 -1 -1 -1 162 246 592 628
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+0
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+1
+1920 779
+END_OF_DESKTOP_DATA
+6
+0 1 -1 -1 -1 -1 462 30 1151 490
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+0
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+1
+1920 779
+END_OF_DESKTOP_DATA
+END_OF_DESKTOP_DATA_COLLECTION
+0
+0 1
+1
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+6
+0 1 0 0 -1 -1 240 280 590 530
+6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 32767 0 0 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 0 0 
+END_OF_DOCK_INFO
+0
+-1
+1
+0 1 -1 -1 -1 -1 480 257 1440 773
+0
+0
+0 0
+END_OF_DESKTOP_DATA
+END_OF_DESKTOP_DATA_COLLECTION
+0
+END_OF_DESKTOP_MEMBER
+{6CF7C630-89FD-44F8-B993-8EDD3010ED7E}
+0
+End_Of_Object VBoxRoot 8
+1 -1 0 0 0 0 0 0 0 0 0 0
+End_Of_Object VUniqueBox 7
+1
+End_Of_Object VConfigurationBox 6
+<VFileName V7 QL> 1 "..\can\GenericTestCase2.cbf" 
+NULL
+0
+0
+End_Of_Object VTestNode 5
+VTestModuleControllerXML 5 Begin_Of_Object
+1
+VTestModuleController 6 Begin_Of_Object
+3
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+End_Of_Object VTestModuleController 6
+End_Of_Object VTestModuleControllerXML 5
+End_Of_Testcase_Exec_Flags
+Variant:
+<VFileName V7 BQL> 1 base=cfg "..\..\Configuration" 
+End_Of_Testcase_Exec_Flags_W
+Variant:
+End_Of_Object VXmlTestNode 4
+TS_WRP_DATA_END
+End_Of_Object VTSWrapper<class_VProgrammedNode> 3
+4
+0
+1
+TS_BUS_INFO_COLLECTION_END
+TS_CAPL_BLOCK_END
+End_Of_Object VTSProgrammedNode 2
+1
+4171208206
+3
+1
+4171208206
+2
+4177400318
+4177420254
+1
+4177400318
+0
+1
+4177420254
+0
 End_Of_Object VTSPersistentRoot 1
